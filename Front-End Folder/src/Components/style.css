@@ -1,0 +1,130 @@
+/* Background for full screen */
+.loginPage {
+  background: linear-gradient(to bottom, #00b4aa, #d9f7f6);
+  height: 100vh;
+}
+
+/* Login Card */
+.loginForm {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+}
+
+.loginForm h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #124f47;
+  margin-bottom: 1.5rem;
+}
+
+/* Role Tabs */
+.role-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.role-tabs button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  background: #f3f3f3;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.role-tabs button:hover {
+  background: #e2e2e2;
+}
+
+.role-tabs .active {
+  background: linear-gradient(to right, #00b4aa, #b2ebe9);
+  color: #fff;
+}
+
+/* Input fields */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  transition: border-color 0.2s ease;
+}
+
+.form-control:hover {
+  border-color: #00b4aa;
+}
+
+.form-control:focus {
+  border-color: #00b4aa;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 180, 170, 0.15);
+}
+
+/* Password input with "view" */
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  color: #00b4aa;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+
+.toggle-password:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn-submit {
+  background-color: #00b4aa;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #00938f;
+}
+
+/* Forgot link */
+.forgot-link {
+  font-size: 0.85rem;
+  color: #0077ff;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Error */
+.text-warning {
+  color: red;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}

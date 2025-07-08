@@ -1,0 +1,153 @@
+/* Container & Header */
+.employee-container {
+  padding: 30px 40px;
+  background-color: #f4f7f9;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.employee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.employee-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.add-employee-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-employee-btn:hover {
+  background-color: #218838;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Container */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+.employee-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.employee-table th {
+  background-color: #135d66;
+  color: #fff;
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 8px 8px 0 0;
+  white-space: normal;
+}
+
+.employee-table td {
+  background-color: #fff;
+  padding: 16px 18px;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.employee-table tr {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  min-height: 120px;
+  display: table-row;
+}
+
+.employee-table tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Email Column – prevent cutting */
+.employee-table td:nth-child(3),
+.employee-table th:nth-child(3) {
+  min-width: 220px;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* Image Styling */
+.employee-image {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.action-buttons .view-btn,
+.action-buttons .edit-btn,
+.action-buttons .delete-btn {
+  min-width: 80px;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.view-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.edit-btn {
+  background-color: #17c0eb;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #0ca6cc;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #fbc531;
+  color: #333;
+}
+
+.delete-btn:hover {
+  background-color: #e1aa00;
+  transform: scale(1.05);
+}

@@ -1,0 +1,87 @@
+.category-container {
+  padding: 30px 40px;
+  background-color: #f4f7f9;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.category-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.add-dept-btn {
+  background-color: #218838;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-dept-btn:hover {
+  background-color: #1c7430;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.category-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.category-table th {
+  background-color: #135d66;
+  color: #fff;
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+.category-table td {
+  background-color: #fff;
+  padding: 16px 18px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.category-table tr {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.category-table tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.delete-btn {
+  background-color: #fbc531;
+  color: #333;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e1aa00;
+  transform: scale(1.05);
+}

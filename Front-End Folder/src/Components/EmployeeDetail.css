@@ -1,0 +1,35 @@
+.employee-detail-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* responsive for small screens */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 40px;
+}
+
+.emp-detail-image {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.employee-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  padding-top: 10px;
+}
+
+.employee-detail-info h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.employee-buttons {
+  margin-top: 20px;
+}
